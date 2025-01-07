@@ -1,39 +1,58 @@
-# School App Management System
+### School Application Management System
 
-This project is a **School Application Management System** built with Python and Tkinter. It provides functionalities for student login, payment methods, and account management.
-"Student viewing an app inteface and code in python"
+This project is a **School Application Management System** built with Python and Tkinter. It provides a comprehensive platform for students to access various features such as account details, assignments, report cards, reading materials, and feedback, all within an interactive user-friendly interface.
 
 ---
 
 ## Features
 
 ### 1. **Login System**
-- User authentication with `Student ID`, `Password`, and `Class`.
-- Access control based on valid credentials.
+- Secure user authentication using:
+  - `Student ID`
+  - `Password`
+  - `Class`
+- Grants access only to users with valid credentials.
 
 ### 2. **Account Section**
-- Displays student details including:
+- Displays student-specific details, including:
   - Name
   - Class
   - Section
-  - Total due amount (fetched from the database).
-- Allows payment for dues via various methods.
+  - Total due amount (retrieved from the database).
+- Supports payment of dues through multiple payment methods.
 
-### 3. **Payment Methods**
-- Supports popular payment options like:
-  - Esewa
-  - Khalti
-  - Mobile Banking
+### 3. **Payment Options**
+- Integrated with popular payment gateways:
+  - **Esewa**
+  - **Khalti**
+  - **Mobile Banking**
+
+### 4. **Settings**
+- Options include:
+  - **Log out**
+  - **Calendar Integration**
+  - **Switch between Light/Dark Mode**
+
+### 5. **Assignments and Report Card**
+- View and manage assignments.
+- Access report cards for academic progress.
+
+### 6. **Reading Materials**
+- Access curated reading materials for additional learning.
+
+### 7. **Feedback System**
+- Submit feedback to improve the application and services.
 
 ---
 
 ## Database Configuration
+
 - **Host**: `localhost`
 - **User**: `root`
-- **Password**: Your database password
+- **Password**: (Your database password)
 - **Database Name**: `school_app`
 
-Ensure the database is set up with the required tables and fields. The application uses the `jayesh` table to fetch the `due_bill` amount for the student.
+The application uses the `jayesh` table to fetch the `due_bill` field for displaying outstanding payment amounts.
 
 ---
 
@@ -60,13 +79,11 @@ Ensure the database is set up with the required tables and fields. The applicati
      ```
 
 ---
-
 ## Notes
-- Customize the database credentials to match your local setup.
-- Ensure MySQL is installed and running on your system.
-- The GUI is optimized for a resolution of 1280x720.
+
+- Update the database credentials in the script to match your local setup.
+- The application’s GUI is optimized for a screen resolution of 1280x720.
+- Ensure all dependencies are installed before running the application.
 
 ---
-
-Enjoy managing your school data effortlessly!
 
